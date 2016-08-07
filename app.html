@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project Mirage Visualizer</title>
+    <style>
+      <!--#include virtual="styles.css" -->
+    </style>
+  </head>
+  <body>
+
+    <div id="content">
+      <h1>Project Mirage</h1>
+
+      <h2>Hourly averages:</h2>
+      <canvas id="mirageHourlyChart"></canvas>
+      <div class="hourlyavg"></div>
+      
+      <h2>Daily averages:</h2>
+      <canvas id="mirageDailyChart"></canvas>
+      <div class="dailyavg"></div>
+    </div>
+
+    <div id="csv">
+      <!--#include virtual="complete.csv" -->
+    </div>
+
+    <script>
+      <!--#include virtual="jquery.js"-->
+      <!--#include virtual="chart.js"-->
+      <!--#include virtual="browser.js"-->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+#content{
+    font-family:"Roboto", sans-serif;
+    min-width:400px;
+    max-width:900px;
+    width:65%;
+    font-size:18px;
+    line-height:1.4em;
+    margin:50px auto;
+}
+#content > div {
+    display: none;
+}
+#csv{display:none}
