@@ -20,13 +20,20 @@ Personally, because I wanted data at the hourly level, I repeated the process 3-
 ### Analysis and visualization
 
 Analysis is done in a number of steps linking a few scripts together, and the `analyze.sh` shell script will automatically run the entire sequence for you, given that you have:
+
 1. the sharing / download ID of your Google Sheets spreadsheet
+
 2. a competent UNIX system or Windows 10 with `wget`, `node`, and `bash`/`zsh`
+
 3. sharing permissions correctly configured on the spreadsheet (public link)
 
 The bash script runs the following steps, in order
+
 1. Download the CSV file of your dataset into `data.csv` into the root directory of the project
+
 2. Extrapolate to the hourly resolution the downloaded dataset to generate a `complete.csv` by running the original CSV through `extrapolate.js`, a Node script
+
 3. Set up the files necessary to view a visual representation of your data at `app.html`
+
 4. Output any rows of the CSV that led to garbled numbers or incomprehensible data
 
