@@ -7,8 +7,11 @@
     font-size:18px;
     line-height:1.4em;
     margin:50px auto;
+    color: #333;
 }
 #content > div {
     display: none;
 }
 #csv{display:none}
+a{color:rgb(0, 185, 126);text-decoration:none}
+a:hover{text-decoration:underline}
