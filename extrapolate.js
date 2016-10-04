@@ -132,7 +132,7 @@ function main(datapile) {
         endValue = original[i + 1][1];
 
         // add the start value
-        working.push([startTime, startValue]);
+        working.push([startTime, startValue, 'original']);
 
         // intermediate values
         working = working.concat(extrapolateValues([[startTime, startValue], [endTime, endValue]]));

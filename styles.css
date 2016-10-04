@@ -1,16 +1,20 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 #content{
     font-family:"Roboto", sans-serif;
-    min-width:400px;
-    max-width:900px;
-    width:65%;
+    min-width:300px;
+    max-width:1600px;
+    width:80%;
     font-size:18px;
     line-height:1.4em;
     margin:50px auto;
     color: #333;
 }
-#content > div {
+#content > div:not(.plot) {
     display: none;
+}
+.plot{
+    min-height: 500px;
+    height:76vh;
 }
 #csv{display:none}
 a{color:rgb(0, 185, 126);text-decoration:none}

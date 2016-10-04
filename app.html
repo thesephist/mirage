@@ -13,6 +13,18 @@
       <p>More details at <a href="https://github.com/thesephist/mirage">github.com/thesephist/mirage</a>.</p>
       <p>Research summary at <a href="/mirage/mirage-paper/mirage.pdf">mirage.pdf</a>.</p>
 
+      <h1>Distribution Time Series</h1>
+
+      <h2>Hourly averages:</h2>
+      <div id="mirageHourlyBox" class="plot"></div>
+      
+      <h2>Daily averages:</h2>
+      <div id="mirageDailyBox" class="plot"></div>
+
+      <h2>Weekly averages:</h2>
+      <div id="mirageWeeklyBox" class="plot"></div>
+
+      <h1>Distribution averages over time</h1>
       <h2>Hourly averages:</h2>
       <canvas id="mirageHourlyChart"></canvas>
       <div class="hourlyavg"></div>
@@ -24,16 +36,20 @@
       <h2>Weekly averages:</h2>
       <canvas id="mirageWeeklyChart"></canvas>
       <div class="weeklyavg"></div>
-     </div>
+    </div>
 
     <div id="csv">
       <!--#include virtual="complete.csv" -->
     </div>
 
     <script>
-      <!--#include virtual="jquery.js"-->
-      <!--#include virtual="chart.js"-->
-      <!--#include virtual="browser.js"-->
+      <!--#include virtual="js/jquery.js"-->
+
+      <!--#include virtual="js/chart.js"-->
+      <!--#include virtual="js/browser.js"-->
+      
+      <!--#include virtual="js/plotly.js"-->
+      <!--#include virtual="js/box-plots.js"-->
     </script>
   </body>
 </html>
